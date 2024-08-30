@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escanear Código QR</title>
+    <style>
+        #video {
+            width: 100%;
+            max-width: 600px;
+            border: 1px solid #ccc;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Escanear Código QR</h1>
+    <video id="video" autoplay></video>
+    <div id="result">Resultado: <span id="resultText"></span></div>
+
+    <!-- Incluye la biblioteca jsQR desde un CDN -->
+    <script src="https://unpkg.com/jsqr/dist/jsQR.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
